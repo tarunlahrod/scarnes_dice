@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dabba.scarnes_dice.MainActivity">
+
+<LinearLayout
+    android:layout_marginTop="35dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Turn Score: "
+        />
+
+    <TextView
+        android:id="@+id/cscrU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Turn Score: "
+        />
+
+    <TextView
+        android:id="@+id/cscrC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/msgL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/User"
+        android:text=" "
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/msgW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/User"
+        android:text=" "
+        android:textColor="#00FF00"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="36dp"
+        android:text="Your score: "
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Computer score: " />
+
+    <TextView
+        android:id="@+id/User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Comp"
+        android:layout_alignBottom="@+id/Comp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="0"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:text="0"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/d1"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/d2"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice2" />
+
+    <ImageView
+        android:id="@+id/d3"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice3" />
+
+    <ImageView
+        android:id="@+id/d4"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice4" />
+
+    <ImageView
+        android:id="@+id/d5"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice5" />
+
+    <ImageView
+        android:id="@+id/d6"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice6" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+        android:id="@+id/roll"
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL"
+        android:onClick="ROLL"
+        android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:onClick="HOLD"
+            android:text="HOLD"
+            android:textSize="30sp" />
+
+        <Button
+        android:id="@+id/reset"
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:onClick="RESET"
+        android:textSize="30sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
